@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50a2f57aaec74e5fc42006eed4a8a35b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50a2f57aaec74e5fc42006eed4a8a35b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50a2f57aaec74e5fc42006eed4a8a35b = L.map(
+                "map_50a2f57aaec74e5fc42006eed4a8a35b",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6b6968b84f780b26a90dacfc59c4be0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e6b6968b84f780b26a90dacfc59c4be0.addTo(map_50a2f57aaec74e5fc42006eed4a8a35b);
+        
+    
+            var polygon_71bded6b482b85bd06ba3970c52c267f = L.polygon(
+                [[-10.0, -50.0], [-10.0, -40.0], [0.0, -40.0], [0.0, -50.0]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_50a2f57aaec74e5fc42006eed4a8a35b);
+        
+    
+        var popup_0e2e799f9018805fba185cc412cd7571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccc84272ca7855326735d75b3e31b77c = $(`<div id="html_ccc84272ca7855326735d75b3e31b77c" style="width: 100.0%; height: 100.0%;">Zona de Riesgo 1</div>`)[0];
+                popup_0e2e799f9018805fba185cc412cd7571.setContent(html_ccc84272ca7855326735d75b3e31b77c);
+            
+        
+
+        polygon_71bded6b482b85bd06ba3970c52c267f.bindPopup(popup_0e2e799f9018805fba185cc412cd7571)
+        ;
+
+        
+    
+    
+            var polygon_bb7726817080007774c2ab628dec32fc = L.polygon(
+                [[30.0, 120.0], [30.0, 140.0], [40.0, 140.0], [40.0, 120.0]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_50a2f57aaec74e5fc42006eed4a8a35b);
+        
+    
+        var popup_5cb2f731c9cb1719255b07c183ecf7c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a173d470648216a4965055991a7120b9 = $(`<div id="html_a173d470648216a4965055991a7120b9" style="width: 100.0%; height: 100.0%;">Zona de Riesgo 2</div>`)[0];
+                popup_5cb2f731c9cb1719255b07c183ecf7c9.setContent(html_a173d470648216a4965055991a7120b9);
+            
+        
+
+        polygon_bb7726817080007774c2ab628dec32fc.bindPopup(popup_5cb2f731c9cb1719255b07c183ecf7c9)
+        ;
+
+        
+    
+</script>
+</html>
